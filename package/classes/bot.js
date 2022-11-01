@@ -12,7 +12,7 @@ const opts = require("../utils/options");
 const client = new Discord.Client({
   partials: ["CHANNEL", "GUILD_MEMBER", "MESSAGE", "USER", "REACTION"],
 });
-const log = require('./logger.js')
+const log = require('./Logger.js')
 
 client.ytSearch = new WorkerPool(
   0,
