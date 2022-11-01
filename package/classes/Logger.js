@@ -10,8 +10,8 @@ const debug = function (text) {
       `${text}`
     )}`
   );
-  fs.readFile("/root/home/Nova/logs/debug.log", "utf8", (err, data) => {
-    var abc = fs.createWriteStream(`/root/home/Nova/logs/debug.log`);
+  fs.readFile("./logs/debug.log", "utf8", (err, data) => {
+    var abc = fs.createWriteStream(`./logs/debug.log`);
     abc.write(`${data} \n`);
     abc.write(`${formatted} || [ DEBUG ] :: ${text}`);
     abc.write(
@@ -27,8 +27,8 @@ const error = function (text) {
       `${text}`
     )}`
   );
-  fs.readFile("/root/home/Nova/logs/error.log", "utf8", (err, data) => {
-    var abc = fs.createWriteStream(`/root/home/Nova/logs/error.log`);
+  fs.readFile("./logs/error.log", "utf8", (err, data) => {
+    var abc = fs.createWriteStream(`./logs/error.log`);
     abc.write(`${data} \n`);
     abc.write(`${formatted} || [ ERROR ] :: ${text}`);
     abc.write(
@@ -44,8 +44,8 @@ const warn = function (text) {
       " :: "
     )} ${yellow(`${text}`)}`
   );
-  fs.readFile("/root/home/Nova/logs/warnings.log", "utf8", (err, data) => {
-    var abc = fs.createWriteStream(`/root/home/Nova/logs/warning.log`);
+  fs.readFile("./logs/warnings.log", "utf8", (err, data) => {
+    var abc = fs.createWriteStream(`./logs/warning.log`);
     abc.write(`${data} \n`);
     abc.write(`${formatted} || [ WARNING ] :: ${text}`);
     abc.write(
