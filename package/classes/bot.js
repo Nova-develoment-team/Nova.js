@@ -290,8 +290,8 @@ client.aoi = {
             name: "main",
           },
         ],
-        maxFileData: 10000,
-        cacheMaxSize: 10000,
+        maxFileData: 1000000,
+        cacheMaxSize: 1000000,
         saveTime: 3,
         getTime: 1,
         allTime: 2,
@@ -428,7 +428,7 @@ for(i=0;d.length >i ;i++){
     this.client.once("ready", () => {
       const shard = this.client.shard;
       let shardCount = 10;
-      if (shard) shardCount = shard.count;
+      if (shard) shardCount = "";
       
       const connection = new Lavalink.LavalinkConnection(url, password, this.client.user.id, shardCount, {useSafeProtocol: useSecureProtocol});
 
