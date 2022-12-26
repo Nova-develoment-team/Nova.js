@@ -22,7 +22,7 @@ class LavalinkHTTP {
         "Content-Type": "application/json",
         Accept: "application/json",
         "User-Agent":
-            "Nova-bot™ Lavalink Connecter || Version: 6.0.9 || https://dashboard.nova-bot.tk",
+            "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html) (NodeJS; https://nodejs.org/en/)",
     }
   }
 
