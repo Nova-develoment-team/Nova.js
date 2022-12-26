@@ -1,4 +1,5 @@
 const Parser = {
+    $consolelog: "Logs something in the console with out colouring / terminal.;$consolelog[text]",
   $setServerVar:
     "Sets a server variable value;$setServerVar[variable;value;guildID (optional)]",
   $serverCount: "Displays the amount of servers your bot's in.",
