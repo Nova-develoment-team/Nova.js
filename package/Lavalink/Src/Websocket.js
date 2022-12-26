@@ -47,7 +47,7 @@ class LavalinkWebsocket {
     if (useSecure) protocol = "wss://"
     const headers = {
       "Client-Name":
-        options.userAgent || "NodeJS; https://nodejs.org/en/",
+        options.userAgent || "Nova-bot™ Lavalink Connecter || Version: 6.0.9 || https://dashboard.nova-bot.tk",
       "Num-Shards": options.shardCount || 1,
       Authorization: options.password,
       "User-Id": options.userID,
@@ -90,7 +90,7 @@ class LavalinkWebsocket {
   configureResuming(timeout = 60, key = "TGF2YVdyYXA=@1-b") {
     this.resumeKey = key;
     return this.send({
-      userAgent: "Lavalink",
+      userAgent: "Nova-bot™ Lavalink Connecter || Version: 6.0.9 || https://dashboard.nova-bot.tk",
       op: "configureResuming",
       key,
       timeout,
